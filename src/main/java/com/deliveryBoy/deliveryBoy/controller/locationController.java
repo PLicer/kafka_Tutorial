@@ -16,7 +16,8 @@ public class locationController {
     @PostMapping("/update")
     public String updateLocation()
     {
-        kser.updateLocation("("+Math.round(Math.random()*100)+","+Math.round(Math.random()*100)+")");
+
+            kser.updateLocation("(" + Math.round(Math.random() * 100) + "," + Math.round(Math.random() * 100) + ")");
         return "Location Updated";
 
     }
